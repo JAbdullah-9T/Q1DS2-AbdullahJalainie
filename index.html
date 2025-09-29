@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Working with Strings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            color: lightgreen;
+            background-color: lightcyan;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        form {
+            text-align: center;
+            background: #02ffcc;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Wording with Strings: My Info</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" /><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" /><br>
+
+        <label for="school">School:</label>
+        <input type="text" id="school" placeholder="Enter your school" /><br>
+
+        <button id="submit-btn">Submit</button>
+    </form>
+
+    <script type="py" src="./main.py"></script>
+
+    <py-config>
+        [[fetch]]
+        files = ["main.py"]
+    </py-config>
+</body>
+</html>
